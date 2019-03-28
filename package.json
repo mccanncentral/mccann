@@ -6,6 +6,14 @@
     "cz-lerna-changelog": "^2.0.2",
     "lerna": "^3.13.1"
   },
+  "scripts": {
+    "commit": "npx git-cz",
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
+    "changed": "lerna changed",
+    "exec": "lerna run",
+    "ls": "lerna ls"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
