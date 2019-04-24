@@ -8,8 +8,22 @@ module.exports = (api, options) => {
     }
   })
 
-  api.injectImports(api.entryFile, `import './plugins/blockContent'`)
-  api.injectImports(api.entryFile, `import './plugins/sanity'`)
+  api.injectImports(api.entryFile, `import BlockContent from 'sanity-blocks-vue-component'`)
+  api.injectImports(api.entryFile, `import sanityClient from './sanity'`)
+
+  api.onCreateComplete(() => {
+    const { EOL } = require('os')
+    const fs = require('fs')
+
+    const contentMain = fs.readFileSync(api.entryFile, { encoding: 'utf-8' })
+    const lines = contentMain.split(/\r?\n/g)
+
+    const newVueIndex = lines.findIndex(line => line.match(/new Vue/)) - 1
+    lines[newVueIndex] += `\nVue.use(sanityClient)`
+    lines[newVueIndex] += `\nVue.component('block-content', BlockContent)\n`
+
+    fs.writeFileSync(api.entryFile, lines.join(EOL), { encoding: 'utf-8' })
+  })
 
   api.render('./template', {
     ...options
