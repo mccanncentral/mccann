@@ -1,6 +1,6 @@
 {
   "name": "@mccann/vue-cli-plugin-sanity",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "vue-cli plugin for easy access to Sanity.io datasets",
   "keywords": [
     "vue-cli",
