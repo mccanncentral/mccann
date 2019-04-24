@@ -27,18 +27,12 @@ The plugin will add some files to your project:
 
 ## Usage
 
-At the moment, you need to import the Sanity point of entry each time you want to use it. (TODO: Make this global - Possibly via mixin?)
-
-```
-import sanity from `@/sanity`
-```
-
-Once imported, you can use the `sanity.fetch()` method with a GROQ query of your own design:
+The plugin adds a `$sanity` mixin to your project which exposes the `fetch()` method to your components like so:
 
 ```
 const query = `*[_type == 'page']{
   ...
 }`
-const data = await sanity.fetch(query)
+const data = await this.$sanity.fetch(query)
 this.data = data
 ```
