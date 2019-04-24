@@ -12,9 +12,11 @@ This repository uses [Lerna](https://github.com/lerna/lerna) to manage its multi
 
 ### To commit changes
 ```
+git add [files to add]
 npm run commit
+git push origin
 ```
-You will be asked to make a number of choices and enter some information. "Scope" should be the affected package. Everything else should be relatively self explanitory.
+`npm run commit` invokes commitizen to enforce commit message formats. You will be asked to make a number of choices and enter some information. "Scope" should be the affected package. Everything else should be relatively self explanitory.
 
 ### To bootstrap all the packages in the repo
 ```
