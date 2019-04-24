@@ -1,6 +1,7 @@
 {
   "name": "root",
   "private": true,
+  "license": "UNLICENSED",
   "devDependencies": {
     "commitizen": "^3.0.7",
     "cz-lerna-changelog": "^2.0.2",

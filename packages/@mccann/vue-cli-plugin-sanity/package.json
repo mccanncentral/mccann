@@ -1,0 +1,26 @@
+{
+  "name": "@mccann/vue-cli-plugin-sanity",
+  "version": "0.0.1",
+  "description": "vue-cli plugin for easy access to Sanity.io datasets",
+  "keywords": [
+    "vue-cli",
+    "sanity",
+    "data",
+    "plugin",
+    "mccann"
+  ],
+  "author": "David Eglin <david.eglin@mccann.com>",
+  "homepage": "https://github.com/mccanncentral/mccann",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccanncentral/mccann.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mccanncentral/mccann/issues"
+  }
+}
