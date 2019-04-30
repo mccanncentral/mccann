@@ -1,5 +1,5 @@
 module.exports = {
   projectId: '<%= options.projectId %>',
   dataset: '<%= options.dataset %>',
-  useCDN: <%= options.useCDN %>
+  useCdn: <%= options.useCDN %>
 }
