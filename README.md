@@ -1,6 +1,6 @@
 <center>
   <a href="https://mccanncentral.co.uk" target="_blank" style="display:block; max-width: 150px;">
-    <img src="http://mccanncentral.co.uk/_nuxt/img/mccann_logo.9fe84a2.svg" alt="McCann Central Logo"/>
+    <img src="https://www.mccanncentral.co.uk/_nuxt/img/mccann_logo.9fe84a2.svg" alt="McCann Central Logo"/>
   </a>
 </center>
 
